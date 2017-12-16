@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:800|Roboto:100" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="input_container" class="card">
+    <input type="text" placeholder="Title" id="title_input">
+    <input type="text" placeholder="Take a note..." id="content_input">
+    <div id="input_icons_container">
+        <i class="icon fa fa-list fa-lg">
+            <span class="tooltip">Show Checkboxes</span>
+        </i>
+        <i class="icon fa fa-paint-brush fa-lg">
+            <span class="color-palette shadow">
+                <span id="white-input-color" class="color-box white shadow" onclick="changeInputColor(this, 'rgb(255, 255, 255)')"></span>
+                <span class="color-box blue shadow" onclick="changeInputColor(this, 'rgb(128, 206, 214)')"></span>
+                <span class="color-box grey shadow" onclick="changeInputColor(this, 'rgb(197, 213, 197)')"></span>
+                <span class="color-box green shadow" onclick="changeInputColor(this, 'rgb(153, 255, 153)')"></span>
+            </span>
+            <span class="tooltip">Change Color</span>
+        </i>
+        <span id="done_btn" class="btn">DONE</span>
+    </div>
+</div>
+
+<div id="notes_container">
+
+    <!--<div class="note shadow">-->
+        <!--<span class="floating-icon-container shadow pin-icon-container">-->
+            <!--<i class="fa fa-thumb-tack floating-icon"></i>-->
+        <!--</span>-->
+        <!--<span class="floating-icon-container shadow delete-icon-container" onclick="deleteNote">-->
+            <!--<i class="fa fa-trash floating-icon"></i>-->
+        <!--</span>-->
+
+        <!--<div class="note_title">Z</div>-->
+        <!--<span class="note_content">asfasfasfa</span>-->
+        <!--<div class="icons-container">-->
+            <!--<i class="icon fa fa-clock-o fa-lg">-->
+                <!--<span class="tooltip">Time</span>-->
+            <!--</i>-->
+            <!--<i class="icon fa fa-paint-brush fa-lg">-->
+                <!--<span class="color-palette shadow">-->
+                    <!--<span class="color-box white shadow"></span>-->
+                    <!--<span class="color-box blue shadow" onclick="changeNoteBlue(event)"></span>-->
+                    <!--<span class="color-box grey shadow"></span>-->
+                    <!--<span class="color-box green shadow"></span>-->
+                <!--</span>-->
+                <!--<span class="tooltip">Change Color</span>-->
+            <!--</i>-->
+            <!--<i class="icon fa fa-arrow-left fa-lg" onclick="moveLeft()">-->
+                <!--<span class="tooltip">Move Left</span>-->
+            <!--</i>-->
+            <!--<i class="icon fa fa-arrow-right fa-lg" onclick="moveRight()">-->
+                <!--<span class="tooltip">Move Right</span>-->
+            <!--</i>-->
+        <!--</div>-->
+    <!--</div>-->
+
+</div>
+
+<script src="code.js"></script>
+
+</body>
+</html>
